@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT vs 의료 전문가: 검사의학 질문 응답 분석</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Section -->
+            <section data-background-gradient="linear-gradient(to bottom right, #1a237e, #0d47a1)">
+                <h1 class="animate-title">ChatGPT vs 의료 전문가</h1>
+                <p class="subtitle animate-subtitle">소셜 미디어상의 검사의학 질문에 대한 응답 분석</p>
+                <div class="authors animate-footer">
+                    <p>Mark R. Girton, Dina N. Greene, Geralyn Messerlian, David F. Keren, Min Yu*</p>
+                </div>
+            </section>
+
+            <!-- Background Section -->
+            <section>
+                <section>
+                    <h2 class="animate-scale">연구 배경</h2>
+                    <div class="highlight-box">
+                        <div class="icon-grid">
+                            <div class="fragment fade-right">
+                                <i class="fas fa-robot icon pulse"></i>
+                                <p>LLM의 혁신적 발전</p>
+                            </div>
+                            <div class="fragment fade-right">
+                                <i class="fas fa-laptop-medical icon pulse"></i>
+                                <p>온라인 검사 결과 접근성</p>
+                            </div>
+                            <div class="fragment fade-right">
+                                <i class="fas fa-hospital-user icon pulse"></i>
+                                <p>의료 분야 통합</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">주요 LLM 모델</h2>
+                    <div class="model-grid">
+                        <div class="model-item fragment fade-up">
+                            <i class="fas fa-brain icon"></i>
+                            <h3>GPT</h3>
+                            <p>OpenAI의 대표 모델</p>
+                        </div>
+                        <div class="model-item fragment fade-up">
+                            <i class="fas fa-microchip icon"></i>
+                            <h3>Gemini</h3>
+                            <p>Google의 최신 AI 모델</p>
+                        </div>
+                        <div class="model-item fragment fade-up">
+                            <i class="fas fa-robot icon"></i>
+                            <h3>Claude</h3>
+                            <p>Anthropic의 AI 어시스턴트</p>
+                        </div>
+                        <div class="model-item fragment fade-up">
+                            <i class="fas fa-code icon"></i>
+                            <h3>BERT</h3>
+                            <p>Google의 언어 이해 모델</p>
+                        </div>
+                        <div class="model-item fragment fade-up">
+                            <i class="fas fa-network-wired icon"></i>
+                            <h3>PaLM</h3>
+                            <p>Google의 대규모 언어 모델</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">연구 진행 과정</h2>
+                    <div class="timeline">
+                        <div class="timeline-item fragment fade-left">
+                            <h3>데이터 수집</h3>
+                            <p>2023년 8월 28일 - 10월 10일</p>
+                        </div>
+                        <div class="timeline-item fragment fade-right">
+                            <h3>ChatGPT 응답 생성</h3>
+                            <p>2023년 10월 15일 - 31일</p>
+                        </div>
+                        <div class="timeline-item fragment fade-left">
+                            <h3>전문가 평가</h3>
+                            <p>3명의 검사의학 전문가</p>
+                        </div>
+                        <div class="timeline-item fragment fade-right">
+                            <h3>결과 분석</h3>
+                            <p>통계 분석 및 결론 도출</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Methods Section -->
+            <section>
+                <section>
+                    <h2 class="animate-scale">연구 방법</h2>
+                    <div class="method-grid">
+                        <div class="method-item fragment fade-up">
+                            <i class="fas fa-database icon"></i>
+                            <h3>데이터 수집</h3>
+                            <p>Reddit과 Quora에서 수집</p>
+                        </div>
+                        <div class="method-item fragment fade-up">
+                            <i class="fas fa-robot icon"></i>
+                            <h3>ChatGPT 응답</h3>
+                            <p>ChatGPT 3.5와 4.0 사용</p>
+                        </div>
+                        <div class="method-item fragment fade-up">
+                            <i class="fas fa-user-md icon"></i>
+                            <h3>평가</h3>
+                            <p>검사의학 전문가 3명</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">데이터 수집 상세</h2>
+                    <div class="highlight-box">
+                        <ul>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-file-medical icon"></i>
+                                공개적으로 게시된 환자 질문
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-user-md icon"></i>
+                                검증된 의료 전문가의 응답
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-list-ul icon"></i>
+                                다양한 검사의학 관련 주제:
+                                <ul>
+                                    <li>당뇨병</li>
+                                    <li>갑상선 질환</li>
+                                    <li>임신</li>
+                                    <li>독성학</li>
+                                    <li>감염성 질환</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">평가 프로토콜</h2>
+                    <div class="protocol-grid">
+                        <div class="protocol-item fragment fade-up">
+                            <h3><i class="fas fa-star icon"></i> 응답 평가 기준</h3>
+                            <ul>
+                                <li>우수</li>
+                                <li>좋음</li>
+                                <li>보통</li>
+                                <li>나쁨</li>
+                                <li>확실하지 않음</li>
+                            </ul>
+                        </div>
+                        <div class="protocol-item fragment fade-up">
+                            <h3><i class="fas fa-thumbs-up icon"></i> 선호도 평가</h3>
+                            <ul>
+                                <li>하나 선호</li>
+                                <li>2개 선호</li>
+                                <li>모두 동등하게 좋음</li>
+                                <li>모두 동등하게 수용 불가</li>
+                                <li>확실하지 않음</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Results Section -->
+            <section>
+                <section>
+                    <h2 class="animate-scale">연구 결과 - 기본 통계</h2>
+                    <div class="stat-grid">
+                        <div class="stat-item fragment fade-up">
+                            <div class="stat-number">49</div>
+                            <div class="stat-label">분석된 질문 수</div>
+                        </div>
+                        <div class="stat-item fragment fade-up">
+                            <div class="stat-number">147</div>
+                            <div class="stat-label">총 평가 수</div>
+                        </div>
+                        <div class="stat-item fragment fade-up">
+                            <div class="stat-number">0.217</div>
+                            <div class="stat-label">평가자 간 Kappa 값</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">연구 결과 - 응답 길이</h2>
+                    <div class="pie-chart-container">
+                        <canvas id="responseLengthChart"></canvas>
+                    </div>
+                    <div class="highlight-box fragment fade-up">
+                        <ul>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-user-md icon"></i>
+                                의료 전문가: 평균 127단어
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-robot icon"></i>
+                                ChatGPT 3.5: 평균 270단어
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-robot icon"></i>
+                                ChatGPT 4.0: 평균 293단어
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">연구 결과 - 선호도</h2>
+                    <div class="chart-container">
+                        <canvas id="resultsChart"></canvas>
+                    </div>
+                    <div class="highlight-box fragment fade-up">
+                        <ul>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-chart-line icon"></i>
+                                ChatGPT 응답 선호도: 75.9%
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-robot icon"></i>
+                                ChatGPT v.4.0 선호도: 58.7%
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-user-md icon"></i>
+                                의료 전문가 응답 선호도: 24.1%
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Examples Section -->
+            <section>
+                <section>
+                    <h2 class="animate-scale">예시 1: 혈액 내 칼륨 수치</h2>
+                    <div class="example-container">
+                        <div class="question fragment fade-up">
+                            <h3><i class="fas fa-question-circle icon"></i> 질문</h3>
+                            <p>혈액 내 칼륨 수치가 높고 계속 증가하고 있습니다. 37세 여성; 키 174cm; 체중 55kg. 4개월 전 제왕절개로 출산했습니다. 출산 후 5월에 혈액검사를 했는데 칼륨을 제외한 모든 수치가 정상이었습니다. 칼륨은 5.4였습니다(정상 범위는 5.2까지). 너무 걱정되지는 않았고, 아마도 산전 영양제가 아직 남아있거나 임신과 관련된 다른 무언가 때문일 것이라고 생각했습니다. 어제 혈액검사를 했는데 다시 칼륨을 제외한 모든 것이 정상 범위였고 칼륨은 5.54였습니다. 즉, 증가하고 있습니다.</p>
+                        </div>
+                        <div class="responses">
+                            <div class="response fragment fade-right">
+                                <h4><i class="fas fa-user-md icon pulse"></i> 의료 전문가 응답</h4>
+                                <p>혈액검사에서 칼륨이 높게 나오는 매우 흔한 원인은 용혈—적혈구가 파괴되어 칼륨이 혈장으로 방출되는 것입니다. 이는 팔에 지혈대를 너무 꽉 조이거나 샘플을 한동안 방치할 때 발생할 수 있습니다. 검사에서 이 수치만 벗어났다면, 신장에 문제가 있다는 징후는 없으며 실제로 칼륨이 높은 것이 아닐 가능성이 높지만, 의사와 상담하시기 바랍니다.</p>
+                            </div>
+                            <div class="response fragment fade-up">
+                                <h4><i class="fas fa-robot icon pulse"></i> ChatGPT 3.5 응답</h4>
+                                <p>확정적인 진단을 제공할 수는 없지만, 고려해볼 수 있는 잠재적 요인들을 제시해드리겠습니다:</p>
+                                <ul>
+                                    <li class="fragment fade-right">출산 후 변화: 임신 후 호르몬 변화와 신체 조절로 인해 일시적으로 전해질 불균형이 발생할 수 있습니다.</li>
+                                    <li class="fragment fade-right">식이: 칼륨이 많은 음식을 많이 섭취하거나, 칼륨이 포함된 보충제, 칼륨이 들어간 저염 대체품 섭취가 높은 칼륨 수치로 이어질 수 있습니다.</li>
+                                    <li class="fragment fade-right">약물: 특정 이뇨제와 고혈압 약물이 칼륨 수치에 영향을 미칠 수 있습니다.</li>
+                                    <li class="fragment fade-right">신장 기능: 신장은 칼륨 수치 조절에 중요한 역할을 합니다.</li>
+                                    <li class="fragment fade-right">탈수: 급성 또는 만성 탈수가 혈액 내 칼륨 농도 증가로 이어질 수 있습니다.</li>
+                                    <li class="fragment fade-right">검사실 변동: 약간의 검사실 결과 변동이 발생할 수 있습니다.</li>
+                                </ul>
+                            </div>
+                            <div class="response fragment fade-left">
+                                <h4><i class="fas fa-robot icon pulse"></i> ChatGPT 4.0 응답</h4>
+                                <p>이런 상황이 걱정되시는 것이 이해됩니다만, 개인적인 의학적 조언은 드릴 수 없습니다. 하지만 의료 제공자와 추가로 논의하실 수 있는 일반적인 정보를 제공해드리겠습니다.</p>
+                                <ul>
+                                    <li class="fragment fade-right">변동성: 검사실 결과는 사용된 방법, 특정 검사실의 정확도, 또는 채혈 시 지혈대 적용 시간에 따라 달라질 수 있습니다.</li>
+                                    <li class="fragment fade-right">식이: 바나나, 오렌지, 감자와 같이 칼륨이 높은 음식이 칼륨 수치에 영향을 미칠 수 있습니다.</li>
+                                    <li class="fragment fade-right">약물과 보충제: 칼륨 보존 이뇨제, ACE 억제제, 또는 특정 비처방 보충제가 칼륨 수치에 영향을 미칠 수 있습니다.</li>
+                                    <li class="fragment fade-right">신장 기능: 신장은 칼륨 균형 유지에 중요한 역할을 합니다.</li>
+                                    <li class="fragment fade-right">호르몬: 알도스테론과 같은 호르몬도 칼륨 조절에 역할을 합니다.</li>
+                                </ul>
+                                <p class="fragment fade-up">임상적 연관성을 고려할 때, 약간 상승된 칼륨은 그다지 우려할 만한 수준이 아닐 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">예시 2: 코티솔 검사</h2>
+                    <div class="example-container">
+                        <div class="question fragment fade-up">
+                            <h3><i class="fas fa-question-circle icon"></i> 질문</h3>
+                            <p>야간 근무자로서 코티솔 검사를 언제 받아야 하나요? 오전 8시에 자고 오후 5시쯤 일어납니다.</p>
+                        </div>
+                        <div class="responses">
+                            <div class="response fragment fade-right">
+                                <h4><i class="fas fa-user-md icon pulse"></i> 의료 전문가 응답</h4>
+                                <p>아니요, 야간 근무자도 여전히 오전 8시에 가장 높은 코티솔 수치를 보입니다. 부신 기능 부전을 검사하는 경우 아침에 해야 합니다.</p>
+                            </div>
+                            <div class="response fragment fade-up">
+                                <h4><i class="fas fa-robot icon pulse"></i> ChatGPT 3.5 응답</h4>
+                                <p>코티솔 수치는 일중 변동 패턴을 따르며, 아침에 더 높고 저녁에 더 낮습니다. 귀하의 경우 취침 시간이 오전 8시이므로, 깨어난 지 몇 시간 이내에 코티솔 수치를 검사하는 것이 더 적절할 수 있습니다.</p>
+                            </div>
+                            <div class="response fragment fade-left">
+                                <h4><i class="fas fa-robot icon pulse"></i> ChatGPT 4.0 응답</h4>
+                                <p>코티솔은 일주기 리듬을 따르며, 귀하의 일정을 고려할 때 처음 깨어나는 시점(오후 5시경)에 코티솔을 검사하는 것이 귀하의 신체의 조정된 일주기 리듬에 맞춰 아침 코티솔 수치를 더 잘 반영할 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">예시 3: TSH 수치</h2>
+                    <div class="example-container">
+                        <div class="question fragment fade-up">
+                            <h3><i class="fas fa-question-circle icon"></i> 질문</h3>
+                            <p>TSH 수치가 8.3이고, T3와 T4가 정상 범위라면 무엇을 의미하나요? 저는 34세 여성입니다.</p>
+                        </div>
+                        <div class="responses">
+                            <div class="response fragment fade-right">
+                                <h4><i class="fas fa-user-md icon pulse"></i> 의료 전문가 응답</h4>
+                                <p>TSH가 제 역할을 하고 있으며, 반응하지 않는 갑상선에 직면하여 T3와 T4의 정상 수준을 유지하기 위해 2-3배의 노력을 하고 있다는 것입니다. 이러한 실패의 이유가 주요 임상적 수수께끼입니다. 갑상선염, 약물 간섭 또는 다른 원인일 수 있습니다.</p>
+                            </div>
+                            <div class="response fragment fade-up">
+                                <h4><i class="fas fa-robot icon pulse"></i> ChatGPT 3.5 응답</h4>
+                                <p>불현성 갑상선기능저하증이라고 하는 상태를 나타냅니다. TSH 수치 8.3은 참고 범위 이상이며, 정상 T3와 T4 수치는 갑상선이 여전히 적절한 양의 갑상선 호르몬을 생산하고 있음을 시사합니다.</p>
+                                <p>불현성 갑상선기능저하증은 다양한 원인이 있을 수 있으며, 그 관리는 증상, 기저 질환, 다른 검사 결과를 포함한 개인적 요인에 따라 달라집니다.</p>
+                            </div>
+                            <div class="response fragment fade-left">
+                                <h4><i class="fas fa-robot icon pulse"></i> ChatGPT 4.0 응답</h4>
+                                <p>이는 불현성 갑상선기능저하증을 나타낼 수 있습니다. TSH가 상승되어 있지만 T3와 T4가 정상 범위 내에 있을 때, 이는 갑상선기능저하증의 초기 단계일 수 있습니다.</p>
+                                <p>원인과 위험 요인으로는 만성 자가면역성 갑상선염(하시모토 갑상선염), 이전의 갑상선 치료나 수술, 특정 약물 등이 있을 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Discussion Section -->
+            <section>
+                <section>
+                    <h2 class="animate-scale">논의 - 주요 발견</h2>
+                    <div class="highlight-box">
+                        <div class="icon-grid">
+                            <div class="fragment fade-right">
+                                <i class="fas fa-chart-line icon"></i>
+                                <p>ChatGPT의 우수한 성과</p>
+                            </div>
+                            <div class="fragment fade-right">
+                                <i class="fas fa-balance-scale icon"></i>
+                                <p>정확성과 간결성의 균형</p>
+                            </div>
+                            <div class="fragment fade-right">
+                                <i class="fas fa-handshake icon"></i>
+                                <p>AI와 전문가의 협력</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">논의 - 한계점</h2>
+                    <div class="highlight-box">
+                        <ul>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-user-md icon"></i>
+                                <p>의료 전문가의 다양한 전문 분야</p>
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-check-circle icon"></i>
+                                <p>검증 수준의 차이</p>
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-file-alt icon"></i>
+                                <p>응답 길이와 상세도의 차이</p>
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-users icon"></i>
+                                <p>평가자 간 선호도 차이</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="animate-scale">논의 - AI의 미래</h2>
+                    <div class="highlight-box">
+                        <ul>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-microchip icon"></i>
+                                <p>의료 특화 소규모 언어 모델(SLM) 개발 필요</p>
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-balance-scale icon"></i>
+                                <p>LLM과 SLM의 균형잡힌 통합</p>
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-handshake icon"></i>
+                                <p>의료 전문가와 AI의 협력적 발전</p>
+                            </li>
+                            <li class="fragment fade-right">
+                                <i class="fas fa-shield-alt icon"></i>
+                                <p>의료 데이터 보안과 개인정보 보호</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Conclusion Section -->
+            <section>
+                <h2 class="animate-scale">결론</h2>
+                <div class="conclusion-points">
+                    <p class="fragment fade-right">
+                        <i class="fas fa-check-circle icon"></i>
+                        ChatGPT: 검사의학 질문에 대한 효과적인 도구
+                    </p>
+                    <p class="fragment fade-right">
+                        <i class="fas fa-chart-line icon"></i>
+                        의료 전문가 응답과 비교하여 우수한 성과
+                    </p>
+                    <p class="fragment fade-right">
+                        <i class="fas fa-robot icon"></i>
+                        AI 기술의 의료 통합 가능성 확인
+                    </p>
+                    <p class="fragment fade-right">
+                        <i class="fas fa-search icon"></i>
+                        추가 연구의 필요성
+                    </p>
+                    <p class="fragment fade-right">
+                        <i class="fas fa-handshake icon"></i>
+                        AI와 의료 전문가의 협력적 발전 중요
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            width: 900,
+            height: 550,
+            margin: 0.04,
+            minScale: 0.2,
+            maxScale: 2.0,
+            transition: 'slide',
+            // Add navigation controls
+            keyboard: {
+                13: 'next', // Enter
+                32: 'next', // Space
+                37: 'prev', // Left arrow
+                38: 'up',   // Up arrow
+                39: 'next', // Right arrow
+                40: 'down'  // Down arrow
+            }
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
